@@ -16,6 +16,6 @@
  - Install base16 colors (https://github.com/chriskempson/base16-iterm2)
  - Install iTerm2 (https://www.iterm2.com/)
  - In iTerm2 preferences for your profile set:
-  - Character Encoding: Unicode (UTF-8)
-  - Report Terminal Type: xterm-256color
+   - Character Encoding: Unicode (UTF-8)
+   - Report Terminal Type: xterm-256color
  - Copy the files
