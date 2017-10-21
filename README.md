@@ -18,4 +18,26 @@
  - In iTerm2 preferences for your profile set:
    - Character Encoding: Unicode (UTF-8)
    - Report Terminal Type: xterm-256color
- - Copy the files
+ - Copy the files to ~/
+ - Execute: vim +PluginInstall +qall to install vim's plugins
+
+ ## Ubuntu 17.10
+
+ #### INSTALLATION NOTES
+
+  - sudo apt install zsh
+  - sudo apt install git
+  - sudo apt install vim
+  - sudo apt install tmux
+  - sudo apt install terminator
+  - Install OhMyZsh (https://github.com/robbyrussell/oh-my-zsh)
+  - Install Vundle (https://github.com/VundleVim/Vundle.vim#quick-start)
+  - Install powerline font (https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a#install-powerline-font)
+  - Clean fonts cache (https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a#clean-fonts-cache)
+  - Move config file (https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a#move-config-file)
+  - In Terminator preferences for your profile set:
+    - Preferences>Profiles>Colors>Foreground and Background>Built-in schemes: Solarized dark
+    - Preferences>Profiles>Colors>Palette>Built-in schemes: Solarized
+  - Copy the files to ~/
+  - Execute vim +PluginInstall +qall to install vim's plugins
+
