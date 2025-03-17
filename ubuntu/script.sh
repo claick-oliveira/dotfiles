@@ -16,6 +16,12 @@ usage() {
     echo "  -v, --install-vundle           Install vundle"
     echo "  -f, --install-powerline-fonts  Install powerline fonts"
     echo "  -c, --copy-files               Copy configuration files"
+    echo "  -a, --install-all              Install all"
+    echo "Example:"
+    echo "  $0 --install-all"
+    echo "  $0 --install-packages --install-ohmyzsh"
+    echo "  $0 --install-packages --install-ohmyzsh --install-vundle --install-powerline-fonts --copy-files"
+    echo "  $0 --install-packages --install-ohmyzsh --install-vundle --install-powerline-fonts --copy-files --install-all"-z
     # ...add more options as needed...
 }
 
@@ -106,10 +112,12 @@ while [[ "$#" -gt 0 ]]; do
         copy_files
         vim +PluginInstall +qall
         exit 0
+        ;;
       *)
         echo "Unknown parameter passed: $1"
         usage
         exit 1
         ;;
     esac
+    shift
 done
